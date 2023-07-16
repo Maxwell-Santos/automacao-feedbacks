@@ -52,6 +52,7 @@ for (let c = 2; c < 5; c++) {
       let perPage = listOfFeedbacks.forEach(fillContentFeedback)
   
       dados.push(perPage)
+      
       if (dados.length == 30) {
         TransformToXLSX(dados) //cria a planilha
         console.log('funcionou')
